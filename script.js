@@ -33,7 +33,7 @@ function displayResults(responseJson){
   if(counter === 100){
     $('#text').text(`Fresh out of facts :(`)
     $('#buttonDiv').html(`<button type="button">
-      <a href='https://RosybrownClearVendors--stewartjester.repl.co'>Refresh Page</a>
+      <a href='https://jesterfs.github.io/CatFacts/'>Refresh Page</a>
       </button>`)
   } else {
     $('#text').text(responseJson.all[counter].text);
