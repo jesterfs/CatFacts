@@ -35,9 +35,11 @@ function watchForm(){
 
 
 function displayResults(responseJson){
-  let random = Math.floor((Math.random() * 118) + 3);
+  let length = responseJson.all.length;
+  // console.log(length);
+  let random = Math.floor((Math.random() * length) + 3);
   console.log(random);
-  if(counter === 118){
+  if(counter === 200){
     $('#text').text(`Fresh out of facts :(`)
     $('#buttonDiv').html(`<button type="button">
       <a href='https://jesterfs.github.io/CatFacts/'>Refresh Page</a>
