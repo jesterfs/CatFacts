@@ -2,7 +2,7 @@
 
 
 
-let counter = 3;
+let counter = 0;
 
 function getCat(){
   // let apiKey = `313fc8ff-b940-48ec-8065-9bf9be53f55a`;
@@ -29,14 +29,21 @@ function watchForm(){
   })
 }
 
+// function getRandomArbitrary(min, max) {
+//   return Math.random() * (max - min) + min;
+// }
+
+
 function displayResults(responseJson){
-  if(counter === 100){
+  let random = Math.floor((Math.random() * 118) + 3);
+  console.log(random);
+  if(counter === 118){
     $('#text').text(`Fresh out of facts :(`)
     $('#buttonDiv').html(`<button type="button">
       <a href='https://jesterfs.github.io/CatFacts/'>Refresh Page</a>
       </button>`)
   } else {
-    $('#text').text(responseJson.all[counter].text);
+    $('#text').text(responseJson.all[random].text);
     $('#button').text(`Gimme more facts!`);
   }
   counter = counter + 1;
