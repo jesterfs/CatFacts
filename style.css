@@ -1,0 +1,41 @@
+h1{
+  display: inline-block;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 15px;
+}
+
+#catPic {
+  
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+@media all and (min-width: 600px){
+  #text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img {
+    width: 50%;
+  }
+    
+  
+}
+
+group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+body {
+  text-align: center;
+}
