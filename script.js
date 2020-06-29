@@ -2,7 +2,7 @@
 
 
 
-let counter = 2;
+let counter = 3;
 
 function getCat(){
   // let apiKey = `313fc8ff-b940-48ec-8065-9bf9be53f55a`;
